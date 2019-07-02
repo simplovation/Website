@@ -42,7 +42,7 @@
         -o-transition: all 0.2s ease-in-out;
         -ms-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
-        color: #3fb1a3;
+        color: rgb(48, 94, 192);
         text-decoration: none;
         border-bottom: dotted 1px;
     }
@@ -203,7 +203,7 @@
         input[type="password"]:focus,
         input[type="email"]:focus,
         textarea:focus {
-            border-color: #83d3c9;
+            border-color: rgb(48, 94, 192);
         }
 
     input[type="text"],
@@ -508,14 +508,14 @@
         }
 
         .button.special {
-            background: #83d3c9;
-            border-color: #83d3c9;
+            background: radial-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), rgb(48, 94, 192);
+            border-color: rgb(48, 94, 192);
             color: white !important;
         }
 
             .button.special:hover {
-                background: #96dad1 !important;
-                border-color: #96dad1 !important;
+                background: rgb(48, 94, 192) !important;
+                border-color: rgb(48, 94, 192) !important;
             }
 
         .button.fit {
@@ -540,11 +540,10 @@
         }
 
         .wrapper.style2 {
-            background-color: #83d3c9;
-            background-image: url("/Images/light-bl.svg"), url("/Images/light-br.svg");
-            background-position: bottom left, bottom right;
-            background-repeat: no-repeat, no-repeat;
-            background-size: 25em, 25em;
+            background: url("images/light-bl.svg"), url("images/light-br.svg"), radial-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), rgb(48, 94, 192);
+            background-position: bottom left, bottom right, top left, top left;
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+            background-size: 25em, 25em, auto, 25em;
             color: white;
         }
 
@@ -555,7 +554,7 @@
             .wrapper.style2 .button.special {
                 background: white;
                 border-color: white;
-                color: #83d3c9 !important;
+                color: rgb(48, 94, 192) !important;
             }
 
                 .wrapper.style2 .button.special:hover {
@@ -751,12 +750,8 @@
     @keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 
     #banner {
-        background-attachment: scroll, scroll, scroll, fixed;
-        background-color: #645862;
-        background-image: url("/Images/light-bl.svg"), url("/Images/light-br.svg"), url("/Images/overlay.png"), url("/Images/banner.jpg");
-        background-position: bottom left, bottom right, top left, top center;
-        background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-        background-size: 25em, 25em, auto, cover;
+        background: radial-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url("images/banner.png"), rgb(48, 94, 192);
+        background-size: cover, cover, cover;
         color: white;
         cursor: default;
         padding: 4em 0;
@@ -853,10 +848,10 @@
     #cta {
         background-attachment: scroll, scroll, scroll, fixed;
         background-color: #645862;
-        background-image: url("/Images/light-tl.svg"), url("/Images/light-tr.svg"), url("/Images/overlay.png"), url("/Images/banner.jpg");
+        background: radial-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("images/banner.png");
         background-position: top left, top right, top left, bottom center;
-        background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-        background-size: 25em, 25em, auto, cover;
+        background-repeat: no-repeat, no-repeat, no-repeat, repeat, no-repeat;
+        background-size: cover, 25em, 25em, auto, cover;
         color: white;
         padding: 5em;
         text-align: center;
