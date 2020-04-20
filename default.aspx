@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Chris Pietschmann's Blob</title>
-      <meta http-equiv = "refresh" content = "url = https://pietschsoft.com" />
+      <title>Simplovation</title>
+      <meta http-equiv = "refresh" content = "url = https://simplovation.com" />
    </head>
    <body>
-      <p>If not redirected automatically, <a href="https://pietschsoft.com">click here</a></p>
+      <p>If not redirected automatically, <a href="https://simplovation.com">click here</a></p>
    </body>
 </html>
